@@ -56,7 +56,7 @@ class DatabaseConnection:
 # Global database instance
 db = DatabaseConnection()
 async def get_tasks():
-    return await db.fetch_all("SELECT note FROM tasks")
+    return await db.fetch_all("SELECT * FROM tasks")
 async def add_task(note):
     query = """
             INSERT INTO tasks (note)
