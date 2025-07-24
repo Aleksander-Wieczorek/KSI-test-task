@@ -1,2 +1,42 @@
-<footer>
+
+<footer class="container mt-5">
+<!-- Przycisk wyzwalający modal -->
+<button
+    id="show"
+    class="btn btn-primary"
+    data-bs-toggle="modal"
+    data-bs-target="#todoModal"
+>
+    Dodaj nowe TODO
+</button>
+
+<!-- Modal z formularzem -->
+<div class="modal fade" id="todoModal">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form id="add"> <!-- FORMULARZ OTWIERA CAŁY MODAL -->
+                <div class="modal-header">
+                    <h5 class="modal-title">Dodaj zadanie</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <label for="desc" class="form-label">Opis zadania</label>
+                    <textarea
+                        class="form-control"
+                        id="desc"
+                        rows="3"
+                        placeholder="Szczegóły"
+                        required></textarea>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Anuluj</button>
+                    <button type="submit" class="btn btn-primary" id="submit">Zapisz</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script src="/static/submit.js"></script>
+
+
 </footer>

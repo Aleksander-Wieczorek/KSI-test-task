@@ -1,5 +1,5 @@
 .pgdata
 .vscode
 .idea
-venv/
+.venv/
 node_modules/
